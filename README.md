@@ -6,5 +6,6 @@ The data was collected using the Twitter API and partially hand-labelled. The fi
 The analysis involves word-bagging and TF-IDF vector creation to make the problem numerically tractable. Some basic Natural Language Processing techniques are employed, like investigating text sentiment, length, and readability scores are first explored. The correlation of these values against the political affiliation encoding is checked, and features are selected using this. 
 
 Finally, some classical classification algorithms are applied to the feature-selected data, including random forests, SVM, Linear Discriminant Analysis, neural networks, and a bagging ensemble classifier using SVM. Note that the neural networks are the SK-Learn variation so there are few parameters to tune and likely Tensorflow and Keras could do a better job here with more customization. Optimal parameters for each model are found using a grid search.
-
 As a final note, PCA was used to investigate the possibility of dimension reduction before applying our models, but runtime was not significantly effected so we used the full dimension data.
+
+If you want to use this code, you'll have to edit file paths and if you want to generate your own Twitter data, you'll have to put in the access tokens in the Data Gathering script.
